@@ -1,0 +1,22 @@
+[Jarvis] nircmd.exe speak text "Yes sir"
+[how are you] nircmd.exe speak text "I am fine, sir, thank you for your concern"
+[waiting] nircmd.exe speak text "I am waiting for your command, sir"
+[give me the command list] python window.py data.txt 700x200
+[show the process list] jtasklist.bat
+[search book] start http://it-ebooks.info/search/?q=%1&type=title
+[what is the weather] start https://www.google.al/?gws_rd=cr=4RAjUrSRLIXFtAbZ-YCYDw#q=weather+in+tirana
+[what is the time] jtime.bat | start https://www.google.al/?gws_rd=cr=4RAjUrSRLIXFtAbZ-YCYDw#q=time+in+tirana
+[show me the date] jdate.bat | start https://www.google.al/?gws_rd=cr=4RAjUrSRLIXFtAbZ-YCYDw#q=date+in+tirana
+[search about] start https://www.google.al/?gws_rd=cr=4RAjUrSRLIXFtAbZ-YCYDw#q=%1
+[Define] start https://www.google.al/?gws_rd=cr=4RAjUrSRLIXFtAbZ-YCYDw#q=define:%1
+[Open] start %1
+[disable firewall] Powershell -Command "&{Start-Process netsh -ArgumentList 'advfirewall set allprofiles state off' -verb RunAs}"
+[enable firewall] Powershell -Command "&{Start-Process netsh -ArgumentList 'advfirewall set allprofiles state on' -verb RunAs}"
+[firewall] netsh advfirewall show currentprofile
+[turn off] nircmd.exe mutesysvolume 1
+[turn on] nircmd.exe mutesysvolume 0
+[what is the computer name] nircmd.exe speak text "The computer name is %computername%"
+[give me the computer name] nircmd.exe speak text "The computer name is %computername%"
+[turn off PC] shutdown /s /t 00 /c "Shuting down"
+[shut down] nircmd.exe speak text "Goodbye, sir"
+[shutdown] nircmd.exe speak text "Goodbye, sir"

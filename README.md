@@ -7,8 +7,6 @@ Voice commands:
 
 [how are you] 
 
-[waiting] 
-
 [give me the command list] 
 
 [show the process list] 
